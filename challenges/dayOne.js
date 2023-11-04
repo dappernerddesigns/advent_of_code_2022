@@ -28,7 +28,32 @@ const calorieCounter = (inputStr) => {
   return maxTotalCalories;
 };
 
+const topThree = (inputStr) => {
+  const elves = inputStr.split("\n\n");
+  const elvesBackPacks = elves.map((elf) => {
+    const bag = elf.split("\n");
+    return bag.map((calories) => {
+      return Number(calories);
+    });
+  });
+  const backPackCount = elvesBackPacks
+    .map((elf) => {
+      let totalSnacks = 0;
+      elf.forEach((snack) => {
+        totalSnacks += snack;
+      });
+
+      return totalSnacks;
+    })
+    .sort((a, b) => {
+      return a - b;
+    });
+  const topValue = backPackCount[backPackCount.length - 1];
+  const secondValue = backPackCount[backPackCount.length - 2];
+  const thirdValue = backPackCount[backPackCount.length - 3];
+  return topValue + secondValue + thirdValue;
+};
 const input = getData();
-console.log(calorieCounter(input));
+console.log(topThree(input));
 
 module.exports = { calorieCounter };
