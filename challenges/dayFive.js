@@ -45,7 +45,7 @@ const craneGames = (stacks, instructions) => {
   instructions.forEach(({ move, from, to }) => {
     const currColumn = from - 1;
     const target = to - 1;
-    const payload = stacks[currColumn].splice(-move, move).reverse();
+    const payload = stacks[currColumn].splice(-move, move); // use .reverse() for part one, remove it for part two.
 
     for (const crate in payload) {
       stacks[target].push(payload[crate]);
