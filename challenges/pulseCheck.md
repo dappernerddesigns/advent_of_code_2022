@@ -1,0 +1,243 @@
+# Progress pulse check
+
+This is a collection of all the learning objectives on the course. It is designed to help you pinpoint any aspects of the course you might want to revise and NOT as an indicator of how well you are doing on the course.
+
+## Objectives
+
+### Intro
+
+- [ ] understand what is meant by a command line interface
+- [ ] know how to use the command line to navigate between directories
+- [ ] know why version control is useful in software development
+- [ ] understand that git is version control software
+- [ ] know how to initialise a git repository and maintain a commit history
+- [ ] understand the uses of remote repositories for allowing multiple users to collaborate
+- [ ] know how to use a remote repository to
+- [ ] understand that a computer program is a set of instructions written for machines to execute
+- [ ] understand that JavaScript is a high level programming language
+- [ ] know that a 'string' is one of JavaScript's primitive data types
+- [ ] understand that a function is a set of instructions within a program
+- [ ] know how to run a JavaScript file using NodeJS
+- [ ] know how to leave comments in a JavaScript file
+- [ ] know the different primitive data types
+- [ ] understand that operations can be performed on data in JavaScript
+- [ ] know how to assign data to a variable
+- [ ] understand how if statements can be used to execute code only under certain conditions
+- [ ] understand the concept of truthy and falsy values
+- [ ] know how conditional operators can be used in JavaScript
+- [ ] understand the benefits of using functions
+- [ ] know how to invoke functions in JavaScript
+- [ ] know how to declare functions in JavaScript
+- [ ] understand the basics of how JavaScript interprets code.
+- [ ] understand the concepts of the call stack, the thread and the variable environment.
+- [ ] understand that arrays are ordered lists of values
+- [ ] know how to declare arrays in JavaScript
+- [ ] understand how for loops are used in JavaScript
+- [ ] know how to use for loops and for of loops to iterate over arrays
+- [ ] know the most common JavaScript error types
+- [ ] know how to read JavaScript error messages
+- [ ] know how to use map, filter and forEach array methods
+- [ ] understand when to use map, filter and forEach array methods
+- [ ] understand that in NodeJS, each file is treated as a separate "module"
+- [ ] know that module is an object that represents the current module
+- [ ] know how require is a function used to include modules from other files within the current file
+- [ ] know that module.exports is the value returned when the module is required elsewhere
+- [ ] understand how regular expressions can be used to match parters in text
+- [ ] know the basic structure of a regular expression
+- [ ] know how to create a regular expression in JavaScript
+- [ ] know how to test regular expressions in JavaScript
+- [ ] understand the different purposes of HTML and CSS in creating a web page
+- [ ] know how to identify different elements within a Web page
+- [ ] understand how to use the following HTML tags: main, h1, h2, p, ul, ol, li, a
+- [ ] understand how to use the following CSS properties: margin, padding, border, border-radius, font-family, font-size, background-color, color, text-align
+
+---
+
+### Fundamentals
+
+- [ ] Understand a little of what Node offers in how JS is run.
+- [ ] Understand some differences between the Node REPL and running files/modules with node.
+- [ ] Understand some uses of npm, a package manager for node.
+- [ ] Understand how to write unit tests using jest
+- [ ] Understand how to install modules with npm
+- [ ] Understand the difference between a dependency and a devDependency
+- [ ] Understand how to break down a function into distinct test cases
+- [ ] Gain understanding of higher order functions
+- [ ] Understand how map works
+- [ ] Understand how filter works
+- [ ] Understand certain features and behaviours of JS like hoisting
+- [ ] Understand what we mean by scope in javascript
+- [ ] Understand how JavaScript engine looks up variables in code
+- [ ] Understand what is meant by block scope
+- [ ] Understand the difference between value versus reference
+- [ ] Understand what it means for a data type to be immutable
+- [ ] Understand how non-primtive data types are held on reference
+- [ ] Understand the different ways an object can be mutated - dot notation and square bracket notation
+- [ ] Understand the difference between assertions using toBe and toEqual
+- [ ] Understand how to approach testing concerned with immutability
+- [ ] Understand and be able to use object destructuring
+- [ ] Understand and be able to use array destructuring
+- [ ] Understand why we might want to test behaviours of functions.
+- [ ] Understand how to use the arrange, act, assert pattern to test more complicated behaviours.
+- [ ] Have an awareness of how mock functions can be used to test complex behaviour.
+- [ ] Learn how functions can be returned out of functions
+- [ ] Understand what closure means in javascript
+- [ ] Learn how to use closure to create functions with certain useful behaviours
+- [ ] Learn the key features of recursive functions (base case, recursive case, recursive step)
+- [ ] Understand considerations and approaches when writing recursive solutions
+- [ ] Understand when recursive solutions are necessary
+- [ ] Understand basic distinction between Functional Programming and Object-Oriented Programming
+- [ ] Be able to create a factory function
+- [ ] Be able to use this where appropriate
+- [ ] Understand difference between implicit, explicit, and default bindings of this.
+- [ ] Learn how to define and call constructor functions
+- [ ] Understand how instances share methods from their constructor's prototype
+- [ ] Learn ES6 class syntax
+- [ ] Understand that classes use the prototypal inheritance mechanism under the hood
+- [ ] Be able to extend classes from one another
+- [ ] Learn why Node was invented and the difference between blocking and non-blocking I/O
+- [ ] Understand the asynchronous nature of JavaScript, including how runtime works with the Node API, task queue and the event loop
+- [ ] Learn how to use callback functions in order to work with the result of an async function
+- [ ] Understand that the order in which async callbacks are run is not guaranteed.
+- [ ] Understand that multiple callbacks being run at the same time must build up the result and check when all callbacks have completed before moving on.
+- [ ] Know when dealing with arrays the results should be put back in the original index order.
+- [ ] Understand an array's length just adds one to the maximum index, not the number of items in the array. For dealing with multiple async callbacks we need to keep a count of how many results have come in.
+- [ ] Learn that sending data over the internet has a client server relationship.
+- [ ] Know that this takes the form of a request and response.
+- [ ] Learn that requests are made to a url using a CRUD method.
+- [ ] Learn that requests and responses can have a body that contains information to send. This is a string that is sent in packets.
+- [ ] Learn that Javascript values must be stringified to be sent and parsed once received.
+- [ ] Be able to consume promises from 3rd party functions
+- [ ] Understand that promises are resolved or rejected
+- [ ] Understand how to promisify callback functions
+- [ ] Be able to use Promise.all() to wait for multiple promises to resolve
+
+---
+
+### Backend
+
+- [ ] Understand the anatomy of a url: protocol, domain, path, queries
+- [ ] Know the definition of a parametric endpoint.
+- [ ] Understand some basic status codes. (200: ok, 201: created, 404: not found, 500: internal server error)
+- [ ] Understand the different types of HTTP requests: GET, POST, PUT/PATCH and DELETE
+- [ ] Know how to make a http request with insomnia / browser.
+- [ ] Have awareness of and ability to use callback functions
+- [ ] Understand the anatomy of a URL
+- [ ] Understand what a server is, and awareness of http.createServer, HTTP request methods
+      and basic HTTP status codes
+- [ ] Know how to set up an express application
+- [ ] Have awareness of middleware (express.json())
+- [ ] Understand MVC (Models Views Controllers)
+- [ ] Understand RESTful endpoints
+- [ ] Know that controller functions always invoked with req and res
+- [ ] Understand parametric endpoints (req.params) and queries (req.query)
+- [ ] Understand the differences between relational and non-relational databases
+- [ ] Be able to interact with the psql CLI
+- [ ] Be able to create a database using psql
+- [ ] Know the most common PostgreSQL data types
+- [ ] Be able to create tables in a database
+- [ ] Be able to insert data into tables
+- [ ] Be able to read data in tables using conditional clauses
+- [ ] Be able to update rows in tables using conditional clauses
+- [ ] Be able to delete rows from tables using conditional clauses
+- [ ] Understand different types of relations between data (one-to-one, one-to-many, many-to-many)
+- [ ] Understand and know how to use different JOINS in SQL
+- [ ] Ability to use junction tables when dealing with many-to-many relationships
+- [ ] Ability to use aggregate functions to make calculations in sql queries
+- [ ] Be able to query an SQL database from a Node.js application
+      able to set up a connection pool
+- [ ] Understand the concept of SQL injection
+- [ ] Be able to use dynamic database query parameters without making queries vulnerable to SQL injection
+- [ ] Be able to integrate node-postgres database queries into an Express HTTP server
+- [ ] Understand how integration testing differs from unit testing
+      Understand how to use supertest to test end-points
+- [ ] Be able to use dotenv to organise environment variables
+- [ ] Understand the reasons for separate test and development databases
+- [ ] Be able to connect to different PostgreSQL databases programmatically
+- [ ] Understand how the MVC (Model View Controller) pattern can help us write more maintainable servers
+- [ ] Be able to create routers using express.Router()
+- [ ] Be able to attach multiple request methods to a particular route using .route()
+- [ ] Be able to use node-postgres with an express app to query a psql database
+- [ ] Know some common HTTP status codes
+- [ ] Be able to prevent unhandled promise rejections using .catch
+- [ ] Have a general understanding of next
+- [ ] Be able to create tables in a PostgreSQL database programmatically
+- [ ] Be able to insert JSON data to a PostgreSQL database programmatically
+- [ ] Be able to handle references within data by writing util functions using TDD
+- [ ] Know how to declare and async functions
+- [ ] Know how to use the await operator
+- [ ] Know where it is possible to use the await operator
+- [ ] Know how to use async/await in combination with promise chains
+- [ ] Know how to wait for multiple promises to resolve using await
+- [ ] Know the benefits and drawbacks of the async/await pattern
+- [ ] Be familiar with the TDD process when creating REST API endpoints
+- [ ] Understand how to use aggregate functions in the context of an Express model
+- [ ] Understand how to build up a complex SQL query string when dealing with optional parameters
+- [ ] Know the order in which SQL statements must be written
+- [ ] Know how to prevent SQL injection by manually validating input
+- [ ] Understand that tables with foreign keys may need extra error handling
+- [ ] Become more familiar with async-await syntax
+- [ ] Know how to use variables for columns in database query
+
+---
+
+### Frontend
+
+- [ ] Understand the nested structure of the DOM
+- [ ] Be able to use DOM functions to select and create html elements
+- [ ] Be able to manipulate & create HTML elements
+- [ ] Understand what an event is, and identify different types of events
+- [ ] Understand what an event listener / handler is and its role in making an HTML page interactive
+- [ ] Be able to use event listeners and handlers
+- [ ] Understand how forms work
+- [ ] Improve use of DOM methods and semantic html
+- [ ] Be able to provide inline UI (user interface) validation
+- [ ] Be able to use the 'action' and 'method' form attributes
+- [ ] Understand how a single page application is structured in React.
+- [ ] Be able to use JSX to create html elements.
+- [ ] Be able to use JSX to insert JS values into html.
+- [ ] Be able to write functional components.
+- [ ] Be able to pass information to components via props.
+- [ ] Be able to access the props of a functional component.
+- [ ] Understand how to extract functionality into it's own component.
+- [ ] Understand how to declare and update state in react.
+- [ ] Understand the useState hook and what it returns
+- [ ] Understand the difference setting state with a value vs a callback function.
+- [ ] Be able to break a React App into components from a wire-frame.
+- [ ] Be able to plan what data will need to be held in state.
+- [ ] Understand how to decided which components to hold state in.
+- [ ] Understand how to control an input's value in React.
+- [ ] Understand the difference between controlled and uncontrolled components.
+- [ ] Be able to build a functional form in React using controlled components.
+- [ ] Understand the factors to consider when deciding on state structure
+- [ ] Be able to update nested state without mutation
+- [ ] Be able to derive information from state
+- [ ] Understand how to make a http request with the fetch api.
+- [ ] Understand how to perform side effects in React using the useEffect hook.
+- [ ] Understand how to control when effects are ran using useEffect dependencies
+- [ ] Understand loading patterns in React
+- [ ] Understand error patterns in React
+- [ ] Understand how to build websites with a mobile-first approach.
+- [ ] Understand how to use media-queries to alter css classes.
+- [ ] Understand the BEM (block element modifier) naming convention.
+- [ ] Understand how to scope classes with css modules.
+- [ ] Understand how to dynamically change classNames in React.
+- [ ] Understand when UI libraries are appropriate to use.
+- [ ] Understand how React can emulate different pages using conditional rendering.
+- [ ] Understand how the React Router library implements this functionality.
+- [ ] Understand how to plan React applications with several routes.
+- [ ] Understand how to create a React context.
+- [ ] Understand how to provide values to a context.
+- [ ] Understand how to consume value from a context using useContext.
+- [ ] Understand optimistic rendering entails updating the UI before the back end processing has finished.
+- [ ] Be able to perform state updates optimistically.
+- [ ] Understand when it is appropriate to perform optimistic rendering.
+- [ ] Understand how to give appropriate feedback if a request fails.
+- [ ] Understand how to align users expectations with UI updates.
+- [ ] Understand how to enable CORS (Cross Origin Resource sharing) in an express server.
+- [ ] Be able to use a separate file for functions making API requests.
+- [ ] Understand how to use the axios params option.
+- [ ] Understand how to build reusable React components.
+- [ ] Understand how to use custom hooks written by 3rd party components.
+- [ ] Understand how the rules of hooks must be followed when writing custom hooks.
+- [ ] Be able to write a hook that uses React's in-built hooks.
