@@ -4,8 +4,15 @@ class TailTracker {
   constructor() {
     this.head = { x: 0, y: 0 };
     this.tail = { x: 0, y: 0 };
-    this.visitedSpots = [{ x: 0, y: 0 }];
+    this.visitedSpots = [{ ...this.tail }];
   }
+
+  static DIRECTIONS = {
+    R: { axis: "x", step: 1 },
+    U: { axis: "y", step: 1 },
+    D: { axis: "y", step: -1 },
+    L: { axis: "x", step: -1 },
+  };
 
   inputConverter(row) {
     const [direction, stepCountStr] = row.split(" ");
@@ -70,13 +77,56 @@ class TailTracker {
   }
 }
 
+class SnakeTracker {
+  constructor() {
+    this.snakePositions = [
+      { x: 0, y: 0 },
+      { x: 0, y: 0 },
+      { x: 0, y: 0 },
+      { x: 0, y: 0 },
+      { x: 0, y: 0 },
+      { x: 0, y: 0 },
+      { x: 0, y: 0 },
+      { x: 0, y: 0 },
+      { x: 0, y: 0 },
+      { x: 0, y: 0 },
+    ];
+    this.visitedSpots = [{ ...this.snakePositions[9] }];
+  }
+  static DIRECTIONS = {
+    R: { axis: "x", step: 1 },
+    L: { axis: "x", step: -1 },
+    U: { axis: "y", step: 1 },
+    D: { axis: "y", step: -1 },
+  };
+
+  inputConverter(row) {
+    const [direction, stepCountStr] = row.split(" ");
+    const steps = Number(stepCountStr);
+    return { direction, steps };
+  }
+
+  move(input) {
+    const instr = input.split("\n").map((row) => this.inputConverter(row));
+    instr.forEach(({ direction, steps }) => {
+      for (let i = 0; i < steps; i++) {
+        const { axis, step } = SnakeTracker.DIRECTIONS[direction];
+        this.snakePositions[i][axis] += step;
+        // this.visitedSpots.push(this.snakePositions[9]);
+      }
+    });
+    console.log(this.snakePositions);
+  }
+
+  countUniqueVisits() {
+    const visitSet = new Set(this.visitedSpots.map(({ x, y }) => `${x},${y}`));
+    return visitSet.size;
+  }
+}
+
 const puzzleInput = () => {
   const data = fs.readFileSync("./inputs/dayNine.txt", "utf-8");
   return data;
 };
 
-const input = puzzleInput();
-const rope = new TailTracker();
-rope.moveHead(input);
-console.log(rope.countUniqueVisits());
-module.exports = TailTracker;
+module.exports = { TailTracker, SnakeTracker };

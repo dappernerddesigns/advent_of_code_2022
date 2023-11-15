@@ -1,4 +1,4 @@
-const TailTracker = require("../challenges/dayNine");
+const { TailTracker, SnakeTracker } = require("../challenges/dayNine");
 
 describe("Tail Tracker", () => {
   describe("Input conversion", () => {
@@ -95,8 +95,46 @@ L 5
 R 2`;
       const rope = new TailTracker();
       rope.moveHead(input);
-      console.log(rope);
+
       expect(rope.countUniqueVisits()).toBe(13);
     });
+  });
+});
+
+describe("Snake Tracker", () => {
+  test("When given a single direction, snake position appears correctly", () => {
+    const snake = new SnakeTracker();
+    snake.move("R 5");
+    const snakePos = [
+      { x: 5, y: 0 },
+      { x: 4, y: 0 },
+      { x: 3, y: 0 },
+      { x: 2, y: 0 },
+      { x: 1, y: 0 },
+      { x: 0, y: 0 },
+      { x: 0, y: 0 },
+      { x: 0, y: 0 },
+      { x: 0, y: 0 },
+      { x: 0, y: 0 },
+    ];
+    expect(snake.snakePositions).toEqual(snakePos);
+  });
+  test.skip("When given concurrent directions keeps snake connected", () => {
+    const snake = new SnakeTracker();
+    snake.move(`R 5
+    U 8`);
+    const snakePos = [
+      { x: 5, y: 8 },
+      { x: 5, y: 7 },
+      { x: 5, y: 6 },
+      { x: 5, y: 5 },
+      { x: 5, y: 4 },
+      { x: 4, y: 4 },
+      { x: 3, y: 3 },
+      { x: 2, y: 2 },
+      { x: 1, y: 1 },
+      { x: 0, y: 0 },
+    ];
+    expect(snake.snakePositions).toEqual(snakePos);
   });
 });
