@@ -85,14 +85,12 @@ class SignalBooster {
   }
 
   readScreen() {
-    console.log(this.crtScreen);
     let outputStr = "";
     for (let i = 0; i < this.crtScreen.length; i++) {
       const row = this.crtScreen[i].join("");
       outputStr += row;
       outputStr += "\n";
     }
-
     fs.writeFileSync("dayTenOutput.txt", outputStr);
   }
 }
